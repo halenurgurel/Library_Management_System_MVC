@@ -238,3 +238,50 @@ This project is a web application built with ASP.NET Core MVC for managing book 
 
 > Feel free to contact me if you have any questions!
 
+## Proje Görselleri / Images of the Project
+## Ana Sayfa / Home Page
+<img width="2514" height="1336" alt="anasayfa" src="https://github.com/user-attachments/assets/9ad86210-b2a9-4f86-b871-61e61a3ad206" />
+
+## Hakkında Sayfası / About Page
+<img width="2520" height="1334" alt="hakkında" src="https://github.com/user-attachments/assets/8ec78c30-e7a5-4cc6-b8a5-e1b964f371f6" />
+
+## Kitap Listesi Sayfası / Book List Page
+<img width="2520" height="1336" alt="kitaplistesi" src="https://github.com/user-attachments/assets/b6af2f0d-7489-41e2-82e8-37d5ca2fca56" />
+
+## Kitap Detay Sayfası / Book Details Page
+<img width="2520" height="1336" alt="kitapdetaysayfası" src="https://github.com/user-attachments/assets/afda101f-fd8a-41c2-94c5-4382f11c2969" />
+
+## Kitap Düzenleme Sayfası / Book Editing Page
+<img width="2520" height="1336" alt="kitapdüzenlemesayfası" src="https://github.com/user-attachments/assets/21617d81-a0fb-4f35-a127-28339677bf01" />
+
+## Kitap Silme Sayfası / eleting Page
+<img width="2520" height="1334" alt="kitapsilme" src="https://github.com/user-attachments/assets/c2a2b4fe-bf72-4a59-8cfe-ab5a0b09fb28" />
+
+## Kitap Ekleme Sayfası / Creating Page
+<img width="2520" height="1336" alt="kitapekleme" src="https://github.com/user-attachments/assets/a4e16ff9-90bd-4918-891c-666326993bc0" />
+
+## Silinmiş Kitaplar Sayfası / Deleted Books Page
+<img width="2520" height="1336" alt="silinenkitaplar" src="https://github.com/user-attachments/assets/8660d3eb-f1d2-4f1f-bf62-ef7c8d08278c" />
+<img width="2520" height="1334" alt="silinenkitaplar2" src="https://github.com/user-attachments/assets/373c915c-6082-4bd4-815e-c0d54bb539e9" />
+
+## Yazar Listesi Sayfası / Author List Page
+<img width="2520" height="1332" alt="yazarlistesi" src="https://github.com/user-attachments/assets/166cf601-b3b2-41d6-82e6-cb69a795cd51" />
+
+## Yazar Detay Sayfası / Author Details Page
+<img width="2520" height="1334" alt="yazardetay" src="https://github.com/user-attachments/assets/bd4e9597-402a-483e-8804-bbb33b554453" />
+
+## Yazar Düzenleme Sayfası / Author Editing Page
+<img width="2520" height="1342" alt="yazardüzenleme" src="https://github.com/user-attachments/assets/ff0ac37b-1566-4fba-a322-690f5f8c1c4b" />
+
+## Yazar Silme Sayfası / Deleting Page
+<img width="2520" height="1342" alt="yazarsilme" src="https://github.com/user-attachments/assets/666ec1b8-d6d9-411d-8306-43f01817c7a5" />
+
+## Yazar Ekleme Sayfası / Author Creating Page
+<img width="2520" height="1340" alt="yeniyazarekleme" src="https://github.com/user-attachments/assets/d5fe3396-8455-4c0f-b0a8-ebec2d109e0a" />
+
+## Silinmiş Yazarlar Sayfası / Deleted Page
+<img width="2520" height="1340" alt="silinenyazarlar" src="https://github.com/user-attachments/assets/a3f43243-37fe-4694-8411-3c5c4d90f488" />
+<img width="2520" height="1334" alt="silinenyazarlar2" src="https://github.com/user-attachments/assets/99eec235-12ab-4295-bc62-c82ea094b66a" />
+
+
+
