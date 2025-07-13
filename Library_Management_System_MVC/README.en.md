@@ -111,8 +111,8 @@ This project is a web application built with ASP.NET Core MVC for managing book 
 
 ## Developer
 
-- **Name:** (Add your name)
-- **Date:** (Submission date)
+- **Name:** Halenur Gurel
+- **Date:** 13.07.2025
 
 ---
 

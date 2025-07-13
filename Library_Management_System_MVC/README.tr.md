@@ -111,8 +111,8 @@ Bu proje, bir kütüphanedeki kitap ve yazar işlemlerini yönetmek için ASP.NE
 
 ## Geliştirici
 
-- **Ad Soyad:** (Kendi adını ekle)
-- **Tarih:** (Teslim tarihi)
+- **Ad Soyad:** Halenur Gurel
+- **Tarih:** 13.07.2025
 
 ---
 
