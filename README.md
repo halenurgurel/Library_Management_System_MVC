@@ -254,7 +254,7 @@ This project is a web application built with ASP.NET Core MVC for managing book 
 ## Kitap Düzenleme Sayfası / Book Editing Page
 <img width="2520" height="1336" alt="kitapdüzenlemesayfası" src="https://github.com/user-attachments/assets/21617d81-a0fb-4f35-a127-28339677bf01" />
 
-## Kitap Silme Sayfası / eleting Page
+## Kitap Silme Sayfası / Deleting Page
 <img width="2520" height="1334" alt="kitapsilme" src="https://github.com/user-attachments/assets/c2a2b4fe-bf72-4a59-8cfe-ab5a0b09fb28" />
 
 ## Kitap Ekleme Sayfası / Creating Page
