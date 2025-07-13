@@ -1,0 +1,16 @@
+﻿@model Library_Management_System_MVC.Models.Book
+@{
+    ViewBag.Title = "Kitap Sil";
+}
+
+<div class="card mx-auto mt-5 border-danger" style="max-width:500px;">
+    <div class="card-body">
+        <h3 class="mb-4 text-danger">Kitabı Sil</h3>
+        <p><strong>@Model.Title</strong> isimli kitabı silmek istediğinize emin misiniz?</p>
+        <form asp-action="Delete" method="post">
+            <input type="hidden" asp-for="Id" />
+            <button type="submit" class="btn btn-outline-danger">Evet, Sil</button>
+            <a class="btn btn-outline-secondary" href="/Book/List">İptal</a>
+        </form>
+    </div>
+</div>

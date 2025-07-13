@@ -1,0 +1,19 @@
+﻿@model Library_Management_System_MVC.Models.ViewModels.BookDetailViewModel
+
+@{
+    ViewBag.Title = "Kitap Detayı";
+}
+
+<div class="card mx-auto mt-5" style="max-width:400px;">
+    <div class="card-body">
+        <h3 class="card-title">@Model.Book.Title</h3>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item"><strong>Yazar:</strong> @Model.Author.FirstName @Model.Author.LastName</li>
+            <li class="list-group-item"><strong>Tür:</strong> @Model.Book.Genre</li>
+            <li class="list-group-item"><strong>Yayın Tarihi:</strong> @Model.Book.PublishDate.ToShortDateString()</li>
+            <li class="list-group-item"><strong>ISBN:</strong> @Model.Book.ISBN</li>
+            <li class="list-group-item"><strong>Mevcut Kopya:</strong> @Model.Book.CopiesAvailable</li>
+        </ul>
+        <a class="btn btn-primary mt-3" href="/Book/List"><i class="bi bi-arrow-return-left"></i> Kitap Listesine Dön</a>
+    </div>
+</div>

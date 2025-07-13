@@ -1,0 +1,27 @@
+﻿@model Library_Management_System_MVC.Models.Author
+@{
+    ViewBag.Title = "Yazar Düzenle";
+}
+
+<div class="card mx-auto mt-5" style="max-wdith:400px;">
+    <div class="card-body">
+        <h3 class="mb-4">Yazar Düzenle</h3>
+        <form asp-action="Edit" method="post">
+            <input type="hidden" asp-for="Id" />
+            <div class="mb-3">
+                <label class="form-label">Ad</label>
+                <input asp-for="FirstName" class="form-control" required />
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Soyad</label>
+                <input asp-for="LastName" class="form-control" required />
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Doğum Tarihi</label>
+                <input asp-for="DateOfBirth" type="date" class="form-control" value="@Model.DateOfBirth.ToString("yyyy-MM-dd")" required />
+            </div>
+            <button type="submit" class="btn btn-success"><i class="bi bi-bookmark"></i> Kaydet</button>
+            <a class="btn btn-secondary" href="/Author/list"><i class="bi bi-x-circle"></i> İptal</a>
+        </form>
+    </div>
+</div>

@@ -1,0 +1,12 @@
+﻿@model Library_Management_System_MVC.Models.ViewModels.AuthorDetailViewModel
+@{
+    ViewBag.Title = "Yazar Detayı";
+}
+
+<div class="card mx-auto mt-5" style="max-width:400px;">
+    <div class="card-body">
+        <h3 class="card-title">@Model.FirstName @Model.LastName</h3>
+        <p><strong>Doğum Tarihi:</strong> @Model.DateOfBirth.ToShortDateString()</p>
+        <a class="btn btn-primary" href="/Author/List"><i class="bi bi-arrow-return-left"></i> Yazar Listesine Dön</a>
+    </div>
+</div>

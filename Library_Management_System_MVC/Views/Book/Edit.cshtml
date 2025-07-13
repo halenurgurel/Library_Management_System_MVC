@@ -1,0 +1,47 @@
+﻿@model Library_Management_System_MVC.Models.Book
+@{
+    ViewBag.Title = "Kitap Düzenle";
+    var authors = ViewBag.Authors as List<Library_Management_System_MVC.Models.Author>;
+}
+
+<div class="card mx-auto mt-5" style="max-width:500px;">
+    <div class="card-body">
+        <h3 class="mb-4">Kitap Düzenle</h3>
+        <form asp-action="Edit" method="post">
+            <input type="hidden" asp-for="Id" />
+            <div class="mb-3">
+                <label class="form-label">Başlık</label>
+                <input asp-for="Title" class="form-control" />
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Mevcut Kopya</label>
+                <input asp-for="CopiesAvailable" type="number" min="1" class="form-control" />
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Yazar</label>
+                <select asp-for="AuthorId" class="form-select">
+                    @foreach (var a in authors)
+                    {
+                        var selected = a.Id == Model.AuthorId ? "selected" : "";
+                        @:<option value="@a.Id" @selected>@a.FirstName @a.LastName</option>
+                    }
+                </select>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Tür</label>
+                <input asp-for="Genre" class="form-control" />
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Yayın Tarihi</label>
+                <input asp-for="PublishDate" type="date" class="form-control" value="@Model.PublishDate.ToString("yyyy-MM-dd")" />
+            </div>
+            <div class="mb-3">
+                <label class="form-label">ISBN</label>
+                <input asp-for="ISBN" class="form-control" />
+            </div>
+            <button type="submit" class="btn btn-success"><i class="bi bi-bookmark"></i> Kaydet</button>
+            <a class="btn btn-secondary" href="/Book/list"><i class="bi bi-x-circle"></i> İptal</a>
+
+        </form>
+    </div>
+</div>

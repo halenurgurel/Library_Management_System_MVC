@@ -1,0 +1,26 @@
+﻿@model Library_Management_System_MVC.Models.Author
+@{
+    ViewBag.Title = "Yeni Yazar Ekle";
+}
+
+<div class="card mx-auto mt-5" style="max-width:400px;">
+    <div class="card-body">
+        <h3 class="mb-4">Yeni Yazar Ekle</h3>
+        <form asp-action="Create" method="post">
+            <div class="mb-3">
+                <label class="form-label">Ad</label>
+                <input asp-for="FirstName" class="form-control" required />
+            </div>
+            <div class="mb-3">
+                <label class="form-lable">Soyad</label>
+                <input asp-for="LastName" class="form-control" required />
+            </div>
+            <div class="mb-3">
+                <label class="form-table">Doğum Tarihi</label>
+                <input asp-for="DateOfBirth" type="date" class="form-control" required />
+            </div>
+            <button type="submit" class="btn btn-success"><i class="bi bi-bookmark"></i> Kaydet</button>
+            <a class="btn btn-secondary" href="/Author/list">Vazgeç</a>
+            </form>
+            </div>
+            </div>

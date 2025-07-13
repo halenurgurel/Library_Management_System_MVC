@@ -1,0 +1,39 @@
+﻿@model List<Library_Management_System_MVC.Models.Author>
+
+@{
+    ViewBag.Title = "Yazar Listesi";
+}
+
+<h2 class="mb4">Yazar Listesi</h2> 
+
+<table class="table table-hover align-middle"> 
+    <thead class="table-light"> 
+            <th>Ad</th> 
+            <th>Soyad</th>
+            <th>Doğum Tarihi</th>
+            <th>İşlemler</th>
+        </tr>
+        </thead>
+        <tbody> 
+            @foreach (var author in Model) 
+            {
+            <tr>
+                <td>@author.FirstName</td> 
+                <td>@author.LastName</td>
+                <td>@author.DateOfBirth.ToShortDateString()</td>
+                <td>
+                    <div class="d-flex flex-wrap gap-1">
+                    <a class="btn btn-info btn-sm" href="/Author/Details/@author.Id"><i class="bi bi-card-list"></i> Detay</a>
+                    <a class="btn btn-warning btn-sm" href="/Author/Edit/@author.Id"><i class="bi bi-pencil-square"></i> Düzenle</a>
+                    <a class="btn btn-danger btn-sm" href="/Author/Delete/@author.Id"><i class="bi bi-trash3"></i> Sil</a>
+                    </div>
+                </td>
+            </tr>
+        }
+
+        </tbody>
+        </table>
+        <a class="btn btn-outline-success mb-3" href="/Author/Create">
+            <i class="bi bi-plus-circle"></i> Yeni Yazar Ekle</a>
+        <a class="btn btn-outline-danger mb-3" href="/Author/DeletedList">
+            <i class="bi bi-trash3"></i> Silinen Yazarları Göster</a>

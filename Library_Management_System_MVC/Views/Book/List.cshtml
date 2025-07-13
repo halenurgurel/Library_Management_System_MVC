@@ -1,0 +1,54 @@
+﻿@model List<Library_Management_System_MVC.Models.ViewModels.BookDetailViewModel>
+
+@{
+    ViewBag.Title = "Kitap Listesi";
+}
+
+<h2 class="mb-4">Kitap Listesi</h2>
+
+<table class="table table-striped align middle">
+    <thead class="table-light">
+        <tr>
+            <th>Başlık</th>
+            <th>Yazar</th>
+            <th>Tür</th>
+            <th>Yayın Tarihi</th>
+            <th>Mevcut Kopya</th>
+            <th>İşlemler</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+        <tr>
+            <td>@item.Book.Title</td>
+            <td>@item.Author?.FirstName @item.Author?.LastName</td>
+            <td>@item.Book.Genre</td>
+                <td>@{
+                        var date = item.Book.PublishDate;
+                        if (date.Month == 1 && date.Day == 1)
+                        {
+                            @date.Year
+                        }
+                        else
+                        {
+                            @date.ToShortDateString()
+                        }
+                    }
+            </td>
+            <td>@item.Book.CopiesAvailable</td>
+            <td>
+                <div class="d-flex flex-wrap gap-1">
+                <a class="btn btn-info btn-sm" href="/Book/Details/@item.Book.Id"><i class="bi bi-card-list"></i> Detay</a>
+                    <a class="btn btn-warning btn-sm" href="/Book/Edit/@item.Book.Id"><i class="bi bi-pencil-square"></i> Düzenle</a>
+                <a class="btn btn-danger btn-sm" href="/Book/Delete/@item.Book.Id"><i class="bi bi-trash3"></i> Sil</a>
+                </div>
+            </td>
+        </tr>
+        }
+    </tbody>
+</table>
+<a class="btn btn-outline-success mb-3" href="/Book/Create">
+    <i class="bi bi-plus-circle"></i> Yeni Kitap Ekle</a>
+<a class="btn btn-outline-danger mb-3" href="/Book/DeletedList">
+    <i class="bi bi-trash3"></i> Silinen Kitapları Göster</a>

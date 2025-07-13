@@ -1,0 +1,58 @@
+﻿@model List<Library_Management_System_MVC.Models.ViewModels.BookDetailViewModel>
+
+@{
+    ViewBag.Title = "Silinen Kitaplar";
+}
+
+<h2 class="mb-4">Silinen Kitaplar</h2>
+
+<table class="table table-striped align-middle">
+    <thead class="table-light">
+        <tr>
+            <th>Başlık</th>
+            <th>Yazar</th>
+            <th>Tür</th>
+            <th>Yayın Tarihi</th>
+            <th>Mevcut Kopya</th>
+            <th>İşlemler</th>
+        </tr>
+    </thead>
+    <tbody>
+        @if (Model != null && Model.Count > 0)
+        {
+
+            @foreach (var book in Model)
+            {
+                <tr>
+                    <td>@book.Book.Title</td>
+                    <td>@book.Author?.FirstName @book.Author?.LastName</td>
+                    <td>@book.Book.Genre</td>
+                    <td>
+                        @{
+                            var date = book.Book.PublishDate;
+                            if (date.Month == 1 && date.Day == 1)
+                            {
+                                @date.Year
+                            }
+                            else
+                            {
+                                @date.ToShortDateString()
+                            }
+                        }
+                    </td>
+                    <td>@book.Book.CopiesAvailable</td>
+                    <td>
+                        <a class="btn btn-success btn-sm" href="/Book/Restore/@book.Book.Id">Geri Al</a>
+                    </td>
+                </tr>
+            }
+        }
+        else
+        {
+            <tr>
+                <td colspan="6" class="text-center text-muted">Silinmiş Kitap Yok.</td>
+            </tr>
+        }
+    </tbody>
+</table>
+<a class="btn btn-primary" href="/Book/List">Kitaplar Listesine Dön</a>
